@@ -1,6 +1,4 @@
-package girod.german.kotlinapp.domain
-
-import io.reactivex.disposables.Disposable
+package girod.german.kotlinapp.domain.use_cases
 
 interface GetPostDetailUseCase {
 

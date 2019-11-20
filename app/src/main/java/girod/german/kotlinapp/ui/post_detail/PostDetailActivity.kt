@@ -4,11 +4,10 @@ import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProvider
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import girod.german.kotlinapp.R
-import girod.german.kotlinapp.data.Post
+import girod.german.kotlinapp.domain.entities.Post
 import girod.german.kotlinapp.ui.base.BaseActivity
 import girod.german.kotlinapp.ui.util.ScreenState
 import kotlinx.android.synthetic.main.post_detail_activity.*
@@ -49,7 +48,6 @@ class PostDetailActivity : BaseActivity() {
     }
 
     private fun populateProgressBar(state : ScreenState) {
-        Log.e("mirar aca ","mirar aca entro aca carajo")
         when(state) {
             ScreenState.Loading -> progress_bar.visibility = View.VISIBLE
             ScreenState.LoadingFinish -> progress_bar.visibility = View.GONE

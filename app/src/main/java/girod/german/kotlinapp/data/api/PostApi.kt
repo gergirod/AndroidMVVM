@@ -1,10 +1,9 @@
 package girod.german.kotlinapp.data.api
 
-import girod.german.kotlinapp.data.Post
+import girod.german.kotlinapp.domain.entities.Post
 import io.reactivex.Observable
 import retrofit2.http.GET
 import retrofit2.http.Path
-import java.util.*
 
 interface PostApi {
 

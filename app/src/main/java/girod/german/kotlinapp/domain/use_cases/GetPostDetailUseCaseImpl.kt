@@ -1,6 +1,6 @@
-package girod.german.kotlinapp.domain
+package girod.german.kotlinapp.domain.use_cases
 
-import girod.german.kotlinapp.data.Post
+import girod.german.kotlinapp.domain.entities.Post
 import girod.german.kotlinapp.data.repositories.PostRepository
 import io.reactivex.disposables.Disposable
 import javax.inject.Inject

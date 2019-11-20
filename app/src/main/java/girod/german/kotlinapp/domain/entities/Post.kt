@@ -1,4 +1,4 @@
-package girod.german.kotlinapp.data
+package girod.german.kotlinapp.domain.entities
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

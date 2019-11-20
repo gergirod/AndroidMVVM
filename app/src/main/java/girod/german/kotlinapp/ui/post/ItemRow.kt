@@ -2,7 +2,7 @@ package girod.german.kotlinapp.ui.post
 
 import android.support.v7.widget.RecyclerView
 import android.view.View
-import girod.german.kotlinapp.data.Post
+import girod.german.kotlinapp.domain.entities.Post
 import kotlinx.android.synthetic.main.row_item.view.*
 
 class ItemRow(itemView: View, rowClick: PostAdapter.RowClick) : RecyclerView.ViewHolder(itemView) {

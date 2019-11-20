@@ -3,7 +3,7 @@ package girod.german.kotlinapp.ui.post
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import girod.german.kotlinapp.data.Post
+import girod.german.kotlinapp.domain.entities.Post
 import girod.german.kotlinapp.R
 
 class PostAdapter(rowClick: RowClick) : RecyclerView.Adapter<ItemRow>() {

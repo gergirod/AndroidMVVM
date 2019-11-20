@@ -1,4 +1,4 @@
-package girod.german.kotlinapp.domain
+package girod.german.kotlinapp.domain.use_cases
 
 interface GetPostUseCase {
 

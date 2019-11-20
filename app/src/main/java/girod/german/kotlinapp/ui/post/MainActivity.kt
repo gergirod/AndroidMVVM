@@ -9,7 +9,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import android.widget.Toast
 import girod.german.kotlinapp.R
-import girod.german.kotlinapp.data.Post
+import girod.german.kotlinapp.domain.entities.Post
 import girod.german.kotlinapp.ui.util.ScreenState
 import girod.german.kotlinapp.ui.post_detail.PostDetailActivity
 import girod.german.kotlinapp.ui.base.BaseActivity

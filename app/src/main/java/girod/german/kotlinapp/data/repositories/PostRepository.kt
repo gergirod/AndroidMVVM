@@ -1,8 +1,7 @@
 package girod.german.kotlinapp.data.repositories
 
-import girod.german.kotlinapp.data.Post
+import girod.german.kotlinapp.domain.entities.Post
 import io.reactivex.disposables.Disposable
-import io.reactivex.observers.DisposableSingleObserver
 
 interface PostRepository {
 

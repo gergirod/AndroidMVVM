@@ -3,14 +3,14 @@ package girod.german.kotlinapp.data.injection.module
 import dagger.Module
 import dagger.Provides
 import dagger.Reusable
+import girod.german.kotlinapp.BuildConfig
 import girod.german.kotlinapp.data.api.PostApi
 import girod.german.kotlinapp.data.repositories.PostRepository
 import girod.german.kotlinapp.data.repositories.PostRepositoryImpl
-import girod.german.kotlinapp.data.util.BASE_URL
-import girod.german.kotlinapp.domain.GetPostDetailUseCase
-import girod.german.kotlinapp.domain.GetPostDetailUseCaseImpl
-import girod.german.kotlinapp.domain.GetPostUseCase
-import girod.german.kotlinapp.domain.GetPostsUseCaseImpl
+import girod.german.kotlinapp.domain.use_cases.GetPostDetailUseCase
+import girod.german.kotlinapp.domain.use_cases.GetPostDetailUseCaseImpl
+import girod.german.kotlinapp.domain.use_cases.GetPostUseCase
+import girod.german.kotlinapp.domain.use_cases.GetPostsUseCaseImpl
 import io.reactivex.schedulers.Schedulers
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
@@ -38,7 +38,7 @@ object NetworkModule {
     @JvmStatic
     internal fun provideRetrofitInterface(): Retrofit {
         return Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(BuildConfig.BASE_URL)
                 .addConverterFactory(MoshiConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.createWithScheduler(Schedulers.io()))
                 .build()

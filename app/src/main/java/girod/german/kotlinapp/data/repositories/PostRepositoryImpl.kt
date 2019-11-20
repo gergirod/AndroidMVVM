@@ -1,11 +1,8 @@
 package girod.german.kotlinapp.data.repositories
 
-import girod.german.kotlinapp.data.Post
 import girod.german.kotlinapp.data.api.PostApi
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
-import io.reactivex.functions.Consumer
-import io.reactivex.observers.DefaultObserver
 import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 

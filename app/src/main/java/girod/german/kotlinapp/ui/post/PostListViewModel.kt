@@ -1,12 +1,11 @@
 package girod.german.kotlinapp.ui.post
 
 import android.arch.lifecycle.MutableLiveData
-import girod.german.kotlinapp.data.Post
-import girod.german.kotlinapp.domain.GetPostUseCase
-import girod.german.kotlinapp.domain.GetPostsUseCaseImpl
+import girod.german.kotlinapp.domain.entities.Post
+import girod.german.kotlinapp.domain.use_cases.GetPostUseCase
+import girod.german.kotlinapp.domain.use_cases.GetPostsUseCaseImpl
 import girod.german.kotlinapp.ui.util.ScreenState
 import girod.german.kotlinapp.ui.base.BaseViewModel
-import io.reactivex.disposables.Disposable
 import javax.inject.Inject
 
 class PostListViewModel @Inject constructor(getPost: GetPostUseCase) : BaseViewModel(),
